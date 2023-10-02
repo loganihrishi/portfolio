@@ -1,0 +1,65 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#animation {
+    font-size: 30px;
+    /* color: rgba(255, 217, 0, 0.842); */
+}
+
+/* Header Socials */
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    position: absolute;
+    top: 2%;
+    justify-content: center;
+}
+
+/* Image Styling */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    margin-top: 4rem;
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    border-radius: 6rem 6rem 6rem 6rem;
+    overflow: hidden;
+}
+
+/* Styling for different devices */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 68vh;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .header {
+        height: 100vh;
+    }
+
+    .header_socials {
+        display: None;
+    }
+ }
